@@ -742,10 +742,14 @@ or wrap each row of columns in a <div class="row"> */
   margin: 0;
   padding: 0; }
 
-.container {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto; }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a:link, a:visited {
+  text-decoration: none;
+  color: steelblue; }
 
 .full {
   width: 100%;
@@ -755,18 +759,30 @@ or wrap each row of columns in a <div class="row"> */
   padding-bottom: 1em;
   margin-bottom: 1em; }
 
-.title {
-  font-family: "Futura LT Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+#title {
   text-decoration: none;
-  color: white;
   font-size: 30pt;
   letter-spacing: 1px;
   font-weight: 100; }
+  #title a:link, #title a:visited {
+    color: white; }
 
-a:link, a:visited {
-  text-decoration: none; }
+.futura, #title {
+  font-family: "Futura LT Bold", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 ul {
   list-style: none; }
   ul li {
     list-style: none; }
+    ul li p {
+      background-color: gainsboro;
+      display: inline-block;
+      text-transform: uppercase;
+      border-radius: 3px;
+      margin-left: 1em;
+      padding: 0.25em 0.5em;
+      font-size: 0.5em;
+      font-weight: 900;
+      letter-spacing: 2px;
+      position: relative;
+      top: -3px; }
