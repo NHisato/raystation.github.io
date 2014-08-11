@@ -1,0 +1,42 @@
+@import "norm";
+@import "skeleton_adaptive";
+
+.no-space { margin: 0; padding: 0; }
+
+.container {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.full {
+	@extend .no-space;
+	width: 100%;
+	background-color: black;
+	color: white;
+	padding-top: 4em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+
+.title {
+	font-family: "Futura LT Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: white;
+	font-size: 30pt;
+	letter-spacing: 1px;
+	font-weight: 100;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+} 
+
+ul {
+	list-style: none;
+	@extend .no-space;
+	li {
+		list-style: none;
+		@extend .no-space;
+	}
+}
